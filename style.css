@@ -3,6 +3,7 @@
 html {
   font-family: 'Open Sans', sans-serif;
   font-size: 15px;
+  background-color: #ffefef;
 }
 
 h1,
@@ -11,12 +12,87 @@ h2 {
   text-align: center;
 }
 
-p {
-  text-align: center;
+
+.velObrazku {
+  width: 300px;
 }
 
+.container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.text-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px 50px;
+  padding: 50px 50px;
+  margin: 10px;
+
+}
+
+body {
+  box-sizing: border-box;
+  margin: 0;
+  min-width: 960px;
+  padding: 100px 0 0 0;
+
+}
 
 article {
   max-width: 960px;
   margin: 0 auto;
+  padding: 50px 50px 10px 50px;
+  background-color: #ffffff;
+}
+
+article header {
+  height: 100px;
+  padding-bottom: 40px;
+  text-align: center;
+}
+
+body > header {
+  height: 100px;
+  width: 50%;
+  display: grid;
+  grid-template-columns: max-content;
+}
+
+
+#logo{
+  margin: 0 auto;
+  width: 400px;
+  top: 10px;
+}
+
+.menu-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.dish{
+  width: 200px;
+  padding: 20px;
+}
+
+
+footer {
+  box-sizing: border-box;
+  text-align: center;
+  background-color: #ffefef;
+  height: 100px;
+  padding: 50px 0 0 0;
+}
+
+button {
+  padding: 20px 40px;
+  border: none;
+  background-color: #ffefef;
+  
+}
+
+button a {
+  color: black;
+  text-decoration: none;
 }
